@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"train1 configuration\system_stm32f3xx.o"
+"..\Inc\arm_cortexM4l_math.lib"
+"train1 configuration\stm32f3xx_hal_pwr_ex.o"
+"train1 configuration\stm32f3xx_hal_hrtim.o"
+"train1 configuration\stm32f3xx_hal_gpio.o"
+"train1 configuration\stm32f3xx_hal_flash_ex.o"
+"train1 configuration\stm32f3xx_hal_rcc.o"
+"train1 configuration\stm32f3xx_hal_dma.o"
+"train1 configuration\stm32f3xx_hal_adc_ex.o"
+"train1 configuration\stm32f3xx_hal_flash.o"
+"train1 configuration\stm32f3xx_hal_cortex.o"
+"train1 configuration\stm32f3xx_hal.o"
+"train1 configuration\stm32f3xx_hal_adc.o"
+"train1 configuration\stm32f3xx_hal_pwr.o"
+"train1 configuration\stm32f3xx_hal_rcc_ex.o"
+"train1 configuration\startup_stm32f334x8.o"
+"train1 configuration\stm32f3xx_it.o"
+"train1 configuration\stm32f3xx_hal_msp.o"
+"train1 configuration\main.o"
+--library_type=microlib --strict --scatter "Train1 Configuration\Train1 Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Train1 Configuration.map" -o "Train1 Configuration\Train1 Configuration.axf"
